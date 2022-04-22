@@ -8,7 +8,7 @@ exports.run = async (client, message, args) => {
   const deleteCount = parseInt(args[0], 10);
   if (!deleteCount || deleteCount < 1 || deleteCount > 99)
     return message.reply(
-      "De **0** á **99 mensagens** quer que eu apague qnts?"
+      "de **0** á **99 mensagens** quer que eu apague qnts?"
     );
 
   const fetched = await message.channel.messages.fetch({
