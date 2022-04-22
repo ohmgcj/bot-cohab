@@ -16,8 +16,9 @@ exports.run = async (client, message, args) => {
   });
   message.channel.bulkDelete(fetched);
   message.channel
-    .send(`**${args[0]} mensagens apagadas.**`).then(msg => msg.delete({timeout: 5000}))
-    .catch(error =>
+    .send(`**${args[0]} mensagens apagadas.**`).then(msg => msg.delete({timeout: 20000}));
+  message.channel
+    .send(`Vai se fuder @everyone`)/*.then(msg => msg.delete({timeout: 15000}))*/.catch(error =>
       console.log(`Essa porra não deixou eu apagar: ${error}`)
     );
 };

@@ -1,4 +1,4 @@
-          const express = require('express');
+const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
   const ping = new Date();
@@ -11,8 +11,6 @@ app.listen(process.env.PORT); // Recebe solicitações que o deixa online
 const Discord = require("discord.js"); //Conexão com a livraria Discord.js
 const client = new Discord.Client(); //Criação de um novo Client
 const config = require("./config.json"); //Pegando o prefixo do bot para respostas de comandos
-
-const ytdl = require("ytdl-core"); //Pega biblioteca, provavelmente, que permite conexão ao youtube
 
 client.login(process.env.TOKEN); //Ligando o Bot caso ele consiga acessar o token
 

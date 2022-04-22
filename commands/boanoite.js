@@ -8,5 +8,5 @@ exports.run = async (client, message, args) => {
   if (!user){
     return message.reply('marca um cohabento aí krl');
   }
-  message.channel.send(`${message.author.username}, Desejou **"Só noite!"**, para: ${user.username}! :maple_leaf::nauseated_face: :dash:`, {files:[rand]});
+  message.channel.send(`${message.author.username}, Desejou **"Só noite!"** para ${user.username}! :maple_leaf::nauseated_face: :dash:`, {files:[rand]});
 }
