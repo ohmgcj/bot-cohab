@@ -1,4 +1,6 @@
 const express = require('express');
+const dotenv = require('dotenv');
+dotenv.config();
 const app = express();
 app.get("/", (request, response) => {
   const ping = new Date();
